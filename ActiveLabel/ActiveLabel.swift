@@ -122,7 +122,7 @@ typealias ElementTuple = (range: NSRange, element: ActiveElement, type: ActiveTy
     }
     
     override open var attributedText: NSAttributedString? {
-        didSet { updateTextStorage() }
+        didSet { updateTextStorage(parseText: false) }
     }
     
     override open var font: UIFont! {
